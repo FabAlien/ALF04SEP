@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Hjem</a>
+      <a href="/bestilling.html" aria-current="page">Flybestilling</a>
+      <a href="artikler.html">Artikler</a>
+    </nav>
+    <main>
+      <h1>Bestill din neste flyreise</h1>
+      <hr>
+      <form action="">
+        <label for="fornavn">Fornavn:</label><br>
+        <input type="text" required><br>
+        <label for="etternavn">Etternavn:</label><br>
+        <input type="text" required><br>
+        <label for="adresse">Adresse:</label><br>
+        <input type="text" required><br>
+        <label for="postnummer">Postnummer:</label><br>
+        <input type="number"><br>
+        <label for="epost">Epost:</label><br>
+        <input type="email"><br>
+        <label for="telefon">Mobilnummer:</label><br>
+        <input type="tel"><br>
+        <label for="avreise">Avreise By:</label><br>
+        <select name="avreise" id="avreise">
+          <option value="bergenA">Bergen</option>
+          <option value="osloA">Oslo</option>
+          <option value="stavangerA">Stavanger</option>
+          <option value="trondheimA">Trondheim</option>
+          <option value="tromsøA">Tromsø</option>
+          <option value="stockholmA">Stockholm</option>
+          <option value="københavnA">København</option>
+        </select><br>
+        <label for="avreiseTid">Avreise Tid:</label><br>
+        <input type="datetime-local"><br>
+        <label for="ankomst">Ankomst By:</label><br>
+        <select name="ankomst" id="ankomst">
+          <option value="bergenB">Bergen</option>
+          <option value="osloB">Oslo</option>
+          <option value="stavangerB">Stavanger</option>
+          <option value="trondheimB">Trondheim</option>
+          <option value="tromsøB">Tromsø</option>
+          <option value="stockholmB">Stockholm</option>
+          <option value="københavnB">København</option>
+        </select><br>
+        <label for="ankomstTid">Ankomst Tid:</label><br>
+        <input type="datetime-local"><br>
+        <label for="">Velg Aldersgruppe:</label><br>
+        <label for="alderBarn">Barn</label>
+        <input type="radio" name="alder" id="alderBarn">
+        <label for="alderVoksen">Voksen</label>
+        <input type="radio" name="alder" id="alderVoksen">
+        <label for="alderHonor">Honør</label>
+        <input type="radio" name="alder" id="alderHonor"><br>
+        <label for="">Velg Billett:</label><br>
+        <label for="billettBillig">Billig Billett</label>
+        <input type="radio" name="billett" id="billettBillig">
+        <label for="billettFlex">Flex Billett</label>
+        <input type="radio" name="billett" id="billettFlex">
+        <label for="billettSuper">Super Flex</label>
+        <input type="radio" name="billett" id="billettSuper"><br><br>
+        <label for="nyheter">Ja, jeg ønsker å få et nyhetsbrev om pågående kampanjer og lignende</label>
+        <input type="checkbox"><br><br>
+        <input type="submit" value="Send Bestilling">
+      </form>
+    </main>
+    <footer>
+      <hr><p>Oppdatert 04/09/25 <br>Fabian von Minden</p>
+    </footer>
+  </body>
+</html>
